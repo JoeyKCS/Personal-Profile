@@ -10,7 +10,7 @@ const About = () => {
         
           <div className="col-12 col-md-6 mt-4">
             <h1>Get to know me!</h1>
-            <hr class="border-0 bg-teal-500 h-1 my-4 mx-auto rounded w-6"></hr>
+            <hr className="border-0 bg-teal-500 h-1 my-4 mx-auto rounded w-6"></hr>
 
             <p>
               Hi, my name is Mohau and I am a{" "}
