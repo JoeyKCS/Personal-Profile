@@ -34,8 +34,8 @@ export default function ContactPage() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit:  = (data) => {
-    
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
+    const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
@@ -69,7 +69,7 @@ export default function ContactPage() {
         className="form-control"
         placeholder="First Name"
         {...register('firstName', { required: true, maxLength: 80 })}
-        name="firstName"
+        name="First Name"
         
       />
       {errors.firstName && 'First Name required'}
@@ -82,7 +82,7 @@ export default function ContactPage() {
         className="form-control"
         placeholder="Last Name"
         {...register('lastName', { required: true, maxLength: 100 })}
-        name="lastName"
+        name="Last Name"
         
       />
       {errors.lastName && 'Last Name required'}
@@ -106,7 +106,7 @@ export default function ContactPage() {
         className="form-control md-4"
         placeholder="Phone Number (optional)"
         {...register('phoneNumber', { required: false })}
-        name="phoneNumber"
+        name="phone Number"
         
         
       />
@@ -128,6 +128,7 @@ export default function ContactPage() {
     
   );
 }
+
 
 
 
