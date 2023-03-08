@@ -38,20 +38,18 @@ export const Header = () => {
         </Link>
         </div>
         
-        <div className="d-flex justify-content-center mt-4">
-        <a href="#about" className={styles['scroll-to-section']} onClick={(e) => {
-  e.preventDefault();
-  const target = document.querySelector("#about");
-  target.scrollIntoView({ behavior: "smooth", block: "start" });
-}}>
-  <div style={{ borderBottom: '8px solid blue' }}>
+       <div className="d-flex justify-content-center mt-4">
+  <Link href="/about" >
+    <a>About Us</a>
+    <div style={{ borderBottom: '8px solid blue' }}>
     <br />
     <HiArrowDown
       size={35}
       className={styles['animate-bounce']}
-    />
+   
+   />
   </div>
-</a>
+  </Link>
  </div>
             
            
