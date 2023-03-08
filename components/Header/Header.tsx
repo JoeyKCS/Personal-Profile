@@ -40,7 +40,7 @@ export const Header = () => {
         
        <div className="d-flex justify-content-center mt-4">
   <Link href="/about" >
-    <a>About Us</a>
+    <a>About Me</a>
     <div style={{ borderBottom: '8px solid blue' }}>
     <br />
     <HiArrowDown
